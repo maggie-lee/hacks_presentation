@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+
+body {
+	 font-family: Arial, sans-serif;
+	 font-size: 12px;
+}
+
+.title {
+	font-size: 24px;
+}
+
+.red {
+  color: red;
+}
+
+.answer {
+	
+}
+
+</style>
+<body>
+
+<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+ <div class="title"> -->
+<span class="title">
+	<p>URL FOR THIS WEBSITE WILL BE HERE<br>
+		<span class="red">DRAFT</span>
+	<p>Journalism tools for the tech-curious<br>
+	Ten hacks that don't require coding<br>
+	And will save you time that you can use for journalism<br>
+
+	<p>
+<hr>
+	Problem #1:  "I am all the time checking a website for an agenda or announcement!"<br>
+	Solution: Maybe a robot can check it.<br><br>
+</span>
+
+<blockquote>
+
+	<li><a href="http//www.changedetection.com" target="_blank">Changedetection.com</a> will e-mail you if a page changes. It checks about once a day, I think.</li> <br><br>
+
+	<li><a href="http://www.ifttt.com" target="_blank">IFTTT.com</a> can check FB, Twitter, <a href="https://en.wikipedia.org/wiki/RSS" target="_blank">RSS feeds</a> and other data streams and send you an e-mail, Tweet, etc when it gets something of interest.</li><br><br>
+
+
+	While I'm standing here, let's do an IFTTT recipe that will send me an e-mail each time Atlanta City Council annouces a special meeting:
+
+</blockquote>
+
+<br>
+<hr>
+<span class="title">
+
+	Problem #2: "This Google search is giving me too many results."<br>
+	Solution: Advanced search can narrow it down in useful ways.
+	<br><br>
+</span>
+
+<blockquote id="answer_2" class="answer">
+	
+
+	Some of yall probably know about advanced search:<br>
+	<a href="https://www.google.com/advanced_search" target="_blank">https://www.google.com/advanced_search</a><br>
+	You can narrow searches by when the site was last updated, by phrases you don't want, etc.<br>
+	You can also do it from the search bar, which is nice because you can ask for any filetype, not just the ones listed on the advanced search page:<br><br>
+
+	"tom wolfe" -book<br>
+	= search for the exact phrase "tom wolfe," but leave out any results that contain the word "book"<br><br>
+
+	georgia history site:edu<br>
+	= search for the words "georgia" and "history", but only in websites that end in ".edu"<br><br>
+
+	landfills site:georgia.gov filetype:xls<br>
+	= search for the word "landfills" in all websites that end in georiga.gov, but only show me Excel spreadsheets (.xls)
+
+	(Sometimes the foot of the page will ask if you want to show omitted results. Yes. Show those.)<br><br>
+	<a href = "pix/advancedsearch.jpg" target="_blank">
+  		<img src="pix/advancedsearch.jpg" width="400px"><br>
+	</a> <br><br>
+	
+</blockquote>
+
+<br>
+<hr>
+
+<span class="title">
+
+	Problem #3: I've got a data table, but I'm counting up things by hand.  How can I summarize data in Excel?<br>
+	Solution: Folks, the Excel Pivot Table.<br><br>
+</span>
+
+<blockquote>
+	Let's start with <a href="pix/lotto.xls" download>lotto.xls</a>, a list of where lottery winners live, how much they won and when they won it.<br><br>
+	1. Open the file in Excel and find "Pivot Table." In most versions, it's under "Data."<br><br>
+	<a href = "pix/pivot1.jpg" target="_blank">
+  		<img src="pix/pivot1.jpg" width="300px"><br>
+	</a><br><br>
+	2. You've clicked "OK" and you are taken to a new page with a black box at the side.<br>
+	In that black box, drag "city" down to "row labels"<br>
+	Go back up to the top and grab "city" again and drag it down to "values"<br>
+	Voila, a count of how many winners come from each city<br>
+	<a href = "pix/pivot2.jpg" target="_blank">
+  		<img src="pix/pivot2.jpg" width="300px"><br>
+	</a><br><br>
+	3. How about the sum collected by folk in each city?<br>
+	In that black box, in the bottom right where it says "count of city," grab that and pull it out of the black box to make it disappear<br>
+	Then at the top, grab "amount_won" and pull it down to "Values"<br>
+	<a href = "pix/pivot3.jpg" target="_blank">
+  		<img src="pix/pivot3.jpg" width="300px"><br>
+	</a><br><br>
+	For extra fun, drag "year_won" down to "Row Labels" too<br>
+	<a href = "pix/pivot4.jpg" target="_blank">
+  		<img src="pix/pivot4.jpg" width="300px"><br>
+	</a><br><br>
+</blockquote>
+<br>
+<hr>
+
+
+<span class="title">
+
+	Problem #4: "This document is a stupid .pdf. It contains tables I want to open in Excel."<br>
+	Solution: <a href="https://www.cometdocs.com" target="_blank">Cometdocs</a>.<br><br>
+</span>
+
+<blockquote>
+	PDFs are kind of like a picture of words and tables. Sometimes you can search the text in a .pdf. But sometimes you can't. And you certainly can't open a .pdf with Excel.<br>
+	So there are a couple of services out there that unlock the text and tables in .pdfs.<br>
+	It's prone to error because a computer is making its best guess at what it's seeing.<br>
+	IMHO, <a href="https://www.cometdocs.com" target="_blank">Cometdocs</a> gives you a really clean conversion at a pretty good price.<br>
+	???*** TBC, still free subscription with IRE membership???***<BR>
+	You can convert a few docs a month with a free subscription<br>
+	With a paid subscription, you can do more conversions and "OCR" the text.<br>
+	(OCR: Verb. To turn pictures of words into actual searchable text.)<br><br>
+
+	Let's try it with <a href="pix/lotto.pdf">lotto.pdf</a>. And look at the result carefully ;)
+
+
+</blockquote>
+<br>
+<hr>
+
+<span class="title">
+
+	Problem #5: "I want to make a clickable map"<br>
+	Solution: There are many ways to do this. I like Google the best.<br><br>
+</span>
+
+<blockquote>
+	Let's start with a zipped shapefile.  That's just a kind of map.<br>
+	Other map formats exist, like KML and KMZ and I don't know what all.<br>
+	But Census maps come as shapefiles. And shapefiles can easily be turned into the other formats if you need them.<br>
+	You CAN make a Google map from a KML or KMZ, but only a small one, it looks like.<br><br>
+
+	Download a map of Georgia's state Senate districts: <a href="pix/SENATE14-Shape.zip" download>SENATE14-Shape.zip</a><br><br>
+	It's got to be converted before Google can open it.<br>
+	I use <a href="http://www.shpescape.com" target="_blank">shpescape.com</a>. You're going to have to give it access to your Google account.<br>
+	(You can make a dummy Google account if you don't like all these apps in your business!)<br>
+	<a href = "pix/fusion1.jpg" target="_blank">
+  		<img src="pix/fusion1.jpg" width="300px"><br>
+	</a><br><br>
+	It'll take a minute or two, then you get this.<br>
+	<a href = "pix/fusion2.jpg" target="_blank">
+  		<img src="pix/fusion2.jpg" width="300px"><br>
+	</a><br><br>
+	That takes you to your Google drive.<br> 
+	<a href = "pix/fusion3.jpg" target="_blank">
+  		<img src="pix/fusion3.jpg" width="300px"><br>
+	</a><br><br>
+	Whoa!<br>
+	This is cool, but let's trim what we see when we click a district. This is TMI.<br><br>
+	<a href = "pix/fusion4.jpg" target="_blank">
+  		<img src="pix/fusion4.jpg" width="300px"><br>
+	</a><br><br>
+	<a href = "pix/fusion5.jpg" target="_blank">
+  		<img src="pix/fusion5.jpg" width="300px"><br>
+
+	</a>
+	Ah, this is nicer:
+	<br><br>	
+	<a href = "pix/fusion6.jpg" target="_blank">
+  		<img src="pix/fusion6.jpg" width="300px"><br>
+	</a><br><br>
+	OK now embed this in your website:<br>
+	Go to tools -> publish<br>
+	Change visibility to "public on the web"<br>
+	Finally, put this text in "the right place" on your website. "The right place" will vary by how you publish.<br>
+	<a href = "pix/fusion7.jpg" target="_blank">
+  		<img src="pix/fusion7.jpg" width="300px"><br>
+	</a><br><br>
+	Some newspaper systems, like McClatchy's NewsGate already allow Google map embeds. I would suspect others do too.<br>
+	Wordpress requires a plugin. There are many.
+
+</blockquote>
+
+<br>
+<hr>
+
+<span class="title">
+
+	Problem #6: "This file is too large to send/recieve via e-mail."<br>
+	Solution: Sign up for <a href="https://www.dropbox.com" target="_blank">Dropbox</a>.<br><br>
+</span>
+<blockquote>
+	This is an app that stores really big files for you. If somebody's email is rejecting a file from you, you can upload it to Dropbox and just send them a link to it.<br><br>
+
+	If they are trying to send you a doc that your email is rejecting, you can send them a link to your Dropbox, and they can send it there without having a Dropbox account.<br><br>
+
+</blockquote>
+<br>
+<hr>
+
+<span class="title">
+
+	Problem #7: "I need to download a bunch of documents/pictures from a website. A bunch."<br>
+	Solution: Requires Firefox, but try the DownThemAll plugin<br><br>
+</span>
+
+
+<blockquote>
+	Please get Downthemall from the official Mozilla site: <a href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/developers" target="_blank"> https://addons.mozilla.org/en-US/firefox/addon/downthemall/developers</a><br>
+	There are a bunch of weird clones out there I don't want you downloading to your computer.<br>
+	It'll walk you through installation
+	<br><br>
+	Then, let's try the <a href="http://www.house.ga.gov/mediaServices/en-US/HousePhoto.aspx" target="_blank">headshots of all of Georgia's House members</a>.<br><br>
+	<a href = "pix/down1.jpg" target="_blank">
+  		<img src="pix/down1.jpg" width="300px"><br>
+	</a><br><br>
+	Gives you this:<br>
+	<a href = "pix/down2.jpg" target="_blank">
+  		<img src="pix/down2.jpg" width="300px"><br>
+	</a><br><br>
+	And voila.  The pictures start downloading.  Now you have a file photo of everyone in the Georgia House.
+
+
+</blockquote>
+
+<br>
+<hr>
+
+<span class="title">
+
+	Problem #8: TBD<br>
+	Solution: <br><br>
+</span>
+
+<blockquote>
+
+</blockquote>
+<br>
+<hr>
+<span class="title">
+
+	Problem #9: TBD<br>
+	Solution: <br><br>
+</span>
+<blockquote>
+
+</blockquote>
+<br>
+<hr>
+
+<span class="title">
+
+	Problem #10: "I have more questions."<br>
+	Solution: Join NICAR-L<br><br>
+</span>
+
+<BLOCKQUOTE>
+	That's the <a href="https://www.ire.org/resource-center/listservs/" target="_blank">National Institute for Computer-Assisted Reporting listserv</a>. While you're there, join any of the several Investigative Reporters & Editors listservs.  They are super-helpful and super-friendly.</a><br><br>
+
+
+</BLOCKQUOTE>
+
+
+
+Notes:
+If you're dealing with confidental/leaked documents, consult someone who knows about security before using any web services.  Don't pass a confidental document through a service that keeps a copy.  
+
+
+
+</body>
+</html>
