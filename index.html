@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
+<title>Hacks that don't require coding</title>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    line-height: 1.1
-}
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 
 
-.page-header {
-    padding-bottom: 9px;
-    margin: 40px 0 20px;
-    border-bottom: 1px solid #eee
-}
+	<style>
 
-.red {
-  color: red;
-}
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    font-weight: 400;
+	    line-height: 1.1
+	}
 
-</style>
+	
+
+	.page-header {
+	    padding-bottom: 9px;
+	    margin: 40px 0 20px;
+	    border-bottom: 1px solid #eee
+	}
+
+	.red {
+	  color: red;
+	}
+
+	div.fotorama {
+		border-style: solid;
+		max-width: 730px;
+	}
+
+	div.slide {
+		text-align:center;
+		font-size: 20px;
+
+	}
+
+	</style>
+</head>
 <body>
 
-<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
- -->
+
+<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+
+
+<script>
+    if (Galleria) { $("body").text('Galleria works') }
+</script>
+
 <header class="page-header">
 <h2>
 	Newsroom hacks that don't require coding<br>
-	<span class="red"> ** DRAFT **</span><br>
+	<span class="red"> * DRAFT **</span><br>
 	<a href="http://bit.ly/29lcK1b" target="_blank">http://bit.ly/29lcK1b</a>
 </h2>
 <h4>
 <blockquote>
-	Learn some tech tools that can help you bypass some roadblocks and timesucks on your beat. We'll look at how to track websites, gather data like Tweets and FB posts,
+	Meet some tools that can help you bypass some roadblocks and timesucks on your beat. We'll look at how to track websites, gather data like Tweets and FB posts,
 	search Google better, sum and subtotal data with Excel & unlock PDFs.<br><br>
 	We'll also look at some presentation tools, like how to make a timeline or a Google map without coding.<br><br>
 	That'll be followed by group discussion/Q&A.<br><br> 
@@ -81,11 +108,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	= search for the word "landfills" in all websites that end in georiga.gov, but only show me Excel spreadsheets (.xls)
 	<br>
 
-	(Sometimes the foot of the page will ask if you want to show omitted results. Yes. Show those.)<br><br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/advancedsearch.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/advancedsearch.JPG" width="400px"><br>
-	</a> <br><br>
+	(Sometimes the foot of the page will ask if you want to show omitted results. Yes. Show those.)<br>
+
+
 </blockquote>
+
+<div class="fotorama"  data-allowfullscreen="true">
+  <img 
+  src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/advancedsearch.JPG" 
+  data-caption="Google advanced search">
+  <!-- <img src="http://s.fotorama.io/2.jpg"> -->
+</div>
+
 </h4>
 <br>
 <h2>
@@ -94,30 +128,36 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 </h2>
 <h4>
 <blockquote>
-	<span class="red">**to insert here: a youtube screen video of me doing this</span><br>
 	Let's start with <a href="pix/lotto.xls" download>lotto.xls</a>, a list of where lottery winners live, how much they won and when they won it.<br><br>
-	1. Open the file in Excel and find "Pivot Table." In most versions, it's under Data -> Pivot Table<br><br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot1.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot1.JPG" width="300px"><br>
-	</a><br><br>
-	2. You've clicked "OK" and you are taken to a new page with a black box at the side.<br>
-	In that black box, drag "city" down to "row labels"<br>
-	Go back up to the top and grab "city" again and drag it down to "values"<br>
-	Voila, a count of how many winners come from each city<br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot2.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot2.JPG" width="300px"><br>
-	</a><br><br>
-	3. How about the sum collected by folk in each city?<br>
-	In that black box, in the bottom right where it says "count of city," grab that and pull it out of the black box to make it disappear<br>
-	Then at the top, grab "amount_won" and pull it down to "Values"<br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot3.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot3.JPG" width="300px"><br>
-	</a><br><br>
-	4. For extra fun, drag "year_won" down to "Row Labels" too<br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot4.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot4.JPG" width="300px"><br>
-	</a><br><br>
+	Open the file in Excel and find start this gallery:  
+	<br><br>
 </blockquote>
+
+<div class="fotorama"  data-allowfullscreen="true">
+	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot0.JPG" 
+  	data-caption="1. Open the file in Excel and find 'Pivot Table.' In most versions, it's under Data -> Pivot Table">
+  
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot1.JPG" 
+  	data-caption="2. Is this the data you want? Usually, yes.">
+  
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot2.JPG" 
+  	data-caption="3. Youll get a page with a black box. In that box, drag 'city' down to 'row labels.' Go back to the top, grab 'city' again, and drag it down to 'values.' Voila, a count of winners in each city.">
+
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot3.JPG" 
+  	data-caption="4. How about the sum collected by folk in each city? In the black box, grab 'count of city' and pull it out of the box to make it disappar.  Then at the top, grab 'amount_won' and drag it down to 'values.'">
+
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/pivot4.JPG" 
+  	data-caption="5. For extra fun, grab 'year_won' and drag it down to 'row labels' too.">
+
+</div>
+
+
+
 </h4>
 <br>
 <h2>
@@ -141,7 +181,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 <br>
 <h2>
-	Problem #6: "This file is too large to send/recieve via email."<br>
+	Problem #5: "This file is too large to send/recieve via email."<br>
 	Solution: Sign up for <a href="https://www.dropbox.com" target="_blank">Dropbox</a>.<br><br>
 <h2>
 <h4>
@@ -153,88 +193,115 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 </h4>
 <br>
 <h2>
-	Problem #7: "I need to download a bunch of documents/pictures from a website. A bunch."<br>
+	Problem #6: "I need to download a bunch of documents/pictures from a website. A bunch."<br>
 	Solution: Requires Firefox, but try the DownThemAll plugin<br><br>
 </h2>
 <h4>
 <blockquote>
 	Please get DownThemAll from the official Mozilla site: <a href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/developers" target="_blank"> https://addons.mozilla.org/en-US/firefox/addon/downthemall/developers</a><br>
 	There are a bunch of weird clones out there I don't want you downloading to your computer.<br>
-	It'll walk you through installation
+	It'll walk you through installation.
 	<br><br>
-	Then, let's say we'd like file photos of <a href="http://www.house.ga.gov/mediaServices/en-US/HousePhoto.aspx" target="_blank">all of Georgia's House members</a>.<br><br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/down1.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/down1.JPG" width="300px"><br>
-	</a><br><br>
-	Gives you this:<br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/down2.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/down2.JPG" width="300px"><br>
-	</a><br><br>
-	And voila.  The pictures start downloading.  Now you have a file photo of everyone in the Georgia House.
+	Then, let's say I need file photos of all 180 <a href="http://www.house.ga.gov/mediaServices/en-US/HousePhoto.aspx" target="_blank">Georgia state House members</a>.<br><br>
 </blockquote>
+
+<div class="fotorama"  data-allowfullscreen="true">
+	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/down1.JPG" 
+  	data-caption="1. Once you've installed DownThemAll, you'll have a new choice in Firefox.">
+  
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/down2.JPG" 
+  	data-caption="2. Set three things on this page. Then voila, things start downloading.">
+</div>
+
+
+
 </h4>
 <br>
 <h2>
-	Problem #5: "I want to make a clickable map"<br>
+	Problem #7: "I want to make a clickable map"<br>
 	Solution: There are many ways to do this. I like Google the best.<br><br>
 </h2>
 <h4>
 <blockquote>
-	Let's start with a zipped shapefile.  That's just a kind of map.<br>
-	Other map formats exist, like KML and KMZ and I don't know what all.<br>
-	But Census maps come as shapefiles. And shapefiles can easily be turned into the other formats if you need them.<br>
-	You CAN make a Google map from a KML or KMZ, but only a small one, it looks like.<br><br>
+	There are may ways to do this.  I'm going to go with a <a href="https://en.wikipedia.org/wiki/Shapefile" target="_blank">shapefile (.shp)</a> and <a href="https://support.google.com/fusiontables/answer/2571232?hl=en" target="_blank">Google Fusion Tables</a>.<br><br>
+	With these, you can do a big map and customize it in many ways.<br><br>
+	Yes there are other ways. And you will commonly see other map formats like .kml and .kmz.<br><br>
+	(But FWIW, if you have .kml or .kmz, the map-making process is similar.)<br><br>
+	
+	Prerequisites: a Google account.<br><br>
 
-	Download a map of Georgia's state Senate districts: <a href="pix/SENATE14-Shape.zip" download>SENATE14-Shape.zip</a><br><br>
-	It's got to be converted before Google can open it.<br>
-	I use <a href="http://www.shpescape.com" target="_blank">shpescape.com</a>. You're going to have to give it access to your Google account.<br>
-	(You can make a dummy Google account if you don't like all these apps in your business!)<br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion1.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion1.JPG" width="300px"><br>
-	</a><br><br>
-	It'll take a minute or two, then you get this.<br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion2.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion2.JPG" width="300px"><br>
-	</a><br><br>
-	That takes you to your Google drive.<br> 
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion3.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion3.JPG" width="300px"><br>
-	</a><br><br>
-	Whoa!<br>
-	This is cool, but let's trim what we see when we click a district. This is TMI.<br><br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion4.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion4.JPG" width="300px"><br>
-	</a><br><br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion5.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion5.JPG" width="300px"><br>
+	If, like me, you don't want all kinds of outside apps to have access to your Google/Gmail, just make a dummy account to hold maps.<br><br>
 
-	</a>
-	Ah, this is nicer:
-	<br><br>	
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion6.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion6.JPG" width="300px"><br>
-	</a><br><br>
-	OK now embed this in your website:<br>
-	Go to tools -> publish<br>
-	Change visibility to "public on the web"<br>
-	Finally, put this text in "the right place" on your website. "The right place" will vary by how you publish.<br>
-	<a href = "https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion7.JPG" target="_blank">
-  		<img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion7.JPG" width="300px"><br>
-	</a><br><br>
-	Some newspaper systems, like McClatchy's NewsGate already allow Google map embeds. I would suspect others do too.<br>
-	Wordpress requires a plugin. There are many.
-</blockquote>
+	Now, let's download a shapefile of Georgia's state Senate districts: <a href="pix/SENATE14-Shape.zip" download>SENATE14-Shape.zip</a><br><br>
+
+	And we're going to use a website called <a href="http://www.shpescape.com" target="_blank">shpescape.com</a> to push this file into your Google account. Let's get started!<br><br>
+
+
+<div class="fotorama"  data-allowfullscreen="true">
+	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion1.JPG" 
+  	data-caption="1. Go to this website, www.shpescape.com. It will convert the shapefile and put it into your Google account.">
+  
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion2.JPG" 
+  	data-caption="2. It'll take a minute or two, then you get this. Click the link.">
+  
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion3.JPG" 
+  	data-caption="3. IF you haven't yet linked to your Google account, it will ask you to do so before you see this screen. Once you're here, click the tab at the top 'Map of geometry.'">
+
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion4.JPG" 
+  	data-caption="4. Whoa! This is cool, but click a district, that's too much info. Let's customize the popup. Click the link that says 'Change info window.'">
+
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion5.JPG" 
+  	data-caption="5. Unclick everything except 'district.'">
+
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion6.JPG" 
+  	data-caption="6. This is nicer.">
+
+  	  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion6a.JPG" 
+  	data-caption="7. Now, to get this online, go under Tools, then Publish.">
+
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/fusion7.JPG" 
+  	data-caption="8. Change visiblity to 'public on the web.' Then that code and paste it in 'the right place' in your website.">
+
+  	<div class="slide">The right place in a website?<br><br>
+  		Yep, you have to figure this part out yourself.<br><br>
+  		It's pretty standard though. You need the place to put in "embed code" for a Google map, maybe helpdesk can help if it is not obvious.<br><br>
+  		If your CMS has an "HTML" tab at the top, try it in there.<br><br>
+  		If you're on <b>Wordpress</b>, you'll need a plugin to view an iframe. I use one called "iframe" by webvitaly. There are many though. 
+  	</div>
+
+
+</div>
+
 </h4>
 <br>
 <h2>
-	Problem #8: I want to make a clickable timeline.<br>
-	Solution: <br>Use Timeline JS<br>
+	Problem #8: I want to make a timeline.<br>
+	Solution: Use Timeline JS<br>
 </h2>
 <h4>
 <blockquote>
-text here
+I can't do a better walkthrough than Knight Lab has on the <a href="https://timeline.knightlab.com" target="_blank">Timeline JS site</a>.<br>
+You will need a Google account. And at the end you'll get some code to embed, just like the map example above.
 </blockquote>
-</blockquote>
+
+<br>
+
+Here's a really detailed timeline about Keystone <a href="http://www.politico.com/story/2015/11/keystone-pipeline-tick-tock-215618" target="_blank">from Politico</a>.<br><br>
+Or a simple one right here:
+<br><br>
+
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1waUQhyc_4_uaJQjbQ7YUYYeqElvEWjb6v3BRWKHGeRI&font=Default&lang=en&initial_zoom=2&height=450' width='100%' height='450' frameborder='0'></iframe>
+
 </h4>
 <br>
 <h2>
