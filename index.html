@@ -61,8 +61,8 @@
 <body>
 
 
-<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
--->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 
 <script>
     if (Galleria) { $("body").text('Galleria works') }
@@ -99,7 +99,7 @@
 <h4>
 <blockquote>
 
-	<li><a href="http://www.changedetection.com" target="_blank">Changedetection.com</a> will email you if a page changes. It checks about once a day, I think.</li> <br><br>
+	<li><a href="http//www.changedetection.com" target="_blank">Changedetection.com</a> will email you if a page changes. It checks about once a day, I think.</li> <br><br>
 
 	<li><a href="http://www.ifttt.com" target="_blank">IFTTT.com</a> can check FB, Twitter, <a href="https://en.wikipedia.org/wiki/RSS" target="_blank">RSS feeds</a> and other data streams and send you an email, Tweet, etc when it gets something of interest.</li><br><br>
 
@@ -209,7 +209,7 @@
 	With a paid subscription, you can do more conversions and "OCR" the text.<br>
 	(OCR: Verb. To turn pictures of words into actual searchable text.)<br><br>
 
-	Let's try it with <a href="pix/lotto.pdf" download>lotto.pdf</a>. And look at the result carefully ;)
+	Let's try it with <a href="pix/lotto.pdf">lotto.pdf</a>. And look at the result carefully ;)
 </blockquote>
 </h4>
 
@@ -327,6 +327,7 @@
 
 
 </div>
+</blockquote>
 
 </h4>
 </section>
@@ -359,12 +360,49 @@ Or a simple one right here:
 
 <section>
 <h2>
-	Problem #9: TBD<br>
-	Solution: <br><br>
+	Problem #9: I want to make a graph.<br>
+	Solution: Try <a href="http://www.plot.ly" target="blank">Plotly</a><br><br>
 </h2>
 <blockquote>
-text here
-</blockquote>
+With Plotly's free tier you can make some simple graphs.<br>
+<iframe width="700" height="300" frameborder="0" scrolling="no" src="https://plot.ly/~greencracker/3.embed"></iframe><br>
+So first let's prepare some data to give Plotly.<br>
+Let's go back to <a href="pix/lotto.xls" download>lotto.xls</a><br>
+And make a Pivot Table that sums up winnings by year.<br>
+Then we'll put that info in Plotly.<br>
+
+<div class="fotorama"  data-allowfullscreen="true">
+	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly1.jpg" 
+  	data-caption="1. This looks familiar.  Make a Pivot Table that sums winnings by year.">
+  
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly2.jpg" 
+  	data-caption="2. Then sign up for / sign into Plotly.">
+  
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly3.jpg" 
+  	data-caption="3. To make a new chart, click the menu symbol in the top right, then 'Make a Chart' on the left.">
+
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly4.jpg" 
+  	data-caption="4. Go back to Excel and highlight and copy the data you want in your Plotly chart. Don't grab 'Grand Total.'">
+
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly5.jpg" 
+  	data-caption="5. Go back to Plotly. Paste the data you just grabbed out of Excel.">
+
+  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly6.jpg" 
+  	data-caption="6. Tell Plotly what goes on the Y-axis and what on the X.">
+
+  	  	<img 
+  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly7.jpg" 
+  	data-caption="7. Now, to get this online, save it. You can keep the data private, or you can make it downloadable if you want the world to be able to get your data too. Then after saving, 'share' the graph. Under share -> embed, you will get the lines of code to paste in your CMS.">
+
+</div>
+
+
 </blockquote>
 </h4>
 </section>
