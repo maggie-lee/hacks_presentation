@@ -1,13 +1,25 @@
+
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Hacks that don't require coding</title>
 <head>
 	<script src="jquery-1.x-git.min.js"></script> 
-
 	<link  href="fotorama.css" rel="stylesheet"> 
 	<script src="fotorama.js"></script> 
 
 	<style>
+
+	body {
+        font-family: "Arial", "Helvetica", Sans-Serif;
+        margin: 0 auto;
+        background-color: #e6e6e6;
+        max-width: 1000px;
+    }
+
+    section {
+        margin: 8px 0px 10px;
+    }
 
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -15,8 +27,14 @@
 	    line-height: 1.1
 	}
 
-	
+	section {
+        color: #666;
+        background-color: #F0F0F0;
+        padding: 15px;
+        margin: 2px 0px 20px;
+    }
 
+	
 	.page-header {
 	    padding-bottom: 9px;
 	    margin: 40px 0 20px;
@@ -43,14 +61,15 @@
 <body>
 
 
-<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
-
+<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+-->
 
 <script>
     if (Galleria) { $("body").text('Galleria works') }
 </script>
 
 <header class="page-header">
+<section>
 <h2>
 	Newsroom hacks that don't require coding<br>
 	<span class="red"> * DRAFT **</span><br>
@@ -67,8 +86,11 @@
 	Hosted by: <a href="https://twitter.com/maggie_a_lee" target="_blank">@maggie_a_lee</a>, freelance state and local government reporter, Atlanta<br><br>
 </blockquote>
 </h4>
+</section>
 </header>
 
+
+<section>
 <h2>
 	Problem #1:  "I am all the time checking a website for an agenda or announcement!"<br>
 	Solution: Maybe a robot can check it.<br><br>
@@ -86,7 +108,11 @@
 
 </blockquote>
 </h4>
+</section>
+
 <br>
+
+<section>
 <h2>
 	Problem #2: "This Google search is giving me too many results."<br>
 	Solution: Advanced search can narrow it down in useful ways.
@@ -121,7 +147,11 @@
 </div>
 
 </h4>
+</section>
+
 <br>
+
+<section>
 <h2>
 	Problem #3: I've got a data table, but I'm counting up things by hand.  How can I summarize data in Excel?<br>
 	Solution: Folks, the Excel Pivot Table.<br><br>
@@ -159,7 +189,11 @@
 
 
 </h4>
+</section>
+
 <br>
+
+<section>
 <h2>
 	Problem #4: "This document is a stupid PDF. It contains tables I want to open in Excel."<br>
 	Solution: <a href="https://www.cometdocs.com" target="_blank">Cometdocs</a>.<br><br>
@@ -179,8 +213,12 @@
 </blockquote>
 </h4>
 
+</section>
+
 <br>
-<h2>
+
+<section>
+	<h2>
 	Problem #5: "This file is too large to send/recieve via email."<br>
 	Solution: Sign up for <a href="https://www.dropbox.com" target="_blank">Dropbox</a>.<br><br>
 <h2>
@@ -191,7 +229,11 @@
 	If they are trying to send you a doc that your email is rejecting, you can send them a link to your Dropbox, and they can send it there without having a Dropbox account.<br><br>
 </blockquote>
 </h4>
+</section>
+
 <br>
+
+<section>
 <h2>
 	Problem #6: "I need to download a bunch of documents/pictures from a website. A bunch."<br>
 	Solution: Requires Firefox, but try the DownThemAll plugin<br><br>
@@ -218,7 +260,11 @@
 
 
 </h4>
+</section>
+
 <br>
+
+<section>
 <h2>
 	Problem #7: "I want to make a clickable map"<br>
 	Solution: There are many ways to do this. I like Google the best.<br><br>
@@ -283,7 +329,11 @@
 </div>
 
 </h4>
+</section>
+
 <br>
+
+<section>
 <h2>
 	Problem #8: I want to make a timeline.<br>
 	Solution: Use Timeline JS<br>
@@ -303,7 +353,11 @@ Or a simple one right here:
 <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1waUQhyc_4_uaJQjbQ7YUYYeqElvEWjb6v3BRWKHGeRI&font=Default&lang=en&initial_zoom=2&height=450' width='100%' height='450' frameborder='0'></iframe>
 
 </h4>
+</section>
+
 <br>
+
+<section>
 <h2>
 	Problem #9: TBD<br>
 	Solution: <br><br>
@@ -313,7 +367,11 @@ text here
 </blockquote>
 </blockquote>
 </h4>
+</section>
+
 <br>
+
+<section>
 <h2>
 	Problem #10: "I have more questions."<br>
 	Solution: Join NICAR-L<br><br>
@@ -323,8 +381,12 @@ text here
 	That's the <a href="https://www.ire.org/resource-center/listservs/" target="_blank">National Institute for Computer-Assisted Reporting listserv</a>. While you're there, join any of the several Investigative Reporters & Editors listservs.  They are super-helpful and super-friendly.</a><br><br>
 </blockquote>
 </h4>
+</section>
+
 <br>
 <hr>
+<section>
+
 <h4>
 Notes:
 If you're dealing with confidental/leaked documents, consult someone who knows about security before using any web services.  Don't pass a confidental document through a service that keeps a copy.  
