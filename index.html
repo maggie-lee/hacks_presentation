@@ -4,9 +4,7 @@
 <meta charset="utf-8">
 <title>Hacks that don't require coding</title>
 <head>
-	<script src="jquery-1.x-git.min.js"></script> 
-	<link  href="fotorama.css" rel="stylesheet"> 
-	<script src="fotorama.js"></script> 
+
 
 	<style>
 
@@ -44,28 +42,14 @@
 	  color: red;
 	}
 
-	div.fotorama {
-		border-style: solid;
-		max-width: 730px;
-	}
-
-	div.slide {
-		text-align:center;
-		font-size: 20px;
-
-	}
-
 	</style>
 </head>
 <body>
 
 
-<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+-->
 
-
-<script>
-    if (Galleria) { $("body").text('Galleria works') }
-</script>
 
 <header class="page-header">
 <section>
@@ -76,7 +60,7 @@
 </h2>
 <h4>
 <blockquote>
-	<p>Meet some tools that can help you bypass roadblocks and timesucks on your beat. You'll go back to your newsroom with some ideas about how to track websites, gather data like Tweets and FB posts, search Google better, sum and subtotal data with Excel and unlock PDFs.</p>
+	<p>Meet some tools that can help you bypass roadblocks and timesucks on your beat. You'll go back to your newsroom with some ideas about how to track websites, gather data like Tweets, search Google better, sum and subtotal data with Excel and unlock PDFs.</p>
 	<p>We'll also look at some ways to get interactive graphics in your online stories, like Google maps, timelines and graphs — all without coding.</p>
 	<p>That'll be followed by group discussion/Q&A. This is geared toward IT beginners who want an intro to data-gathering and presentation tools.</p>
 	<p>Outline: <a href="http://bit.ly/29lcK1b" target="_blank">http://bit.ly/29lcK1b</a></p>
@@ -106,8 +90,10 @@
 
 	<li><a href="http//www.changedetection.com" target="_blank">Changedetection.com</a> will email you if a page changes. It checks about once a day, I think.</li><br>
 
-	<li><a href="http://www.ifttt.com" target="_blank">IFTTT.com</a> can check FB, Twitter, <a href="https://en.wikipedia.org/wiki/RSS" target="_blank">RSS feeds</a> and other data streams and send you an email, Tweet, etc when it gets something of interest.</li>
-	<p>While I'm standing here, let's do an IFTTT recipe that will send me an email each time there's a <a href="https://www.justice.gov/justice-news" target="_blank">USDOJ press release</a> about Georgia.</p>
+	<li><a href="http://www.ifttt.com" target="_blank">IFTTT.com</a> can check Twitter, <a href="https://en.wikipedia.org/wiki/RSS" target="_blank">RSS feeds</a>, Reddit and other data streams and send you an email, Tweet, add a line to a Google spreadsheet, etc when it gets something of interest.</li>
+	<p>Can robots check other social media like FB, Instagram?</p>
+	<p>As far as I know, no publicly-available robot will check <b>other people's</b> traffic on these two. But see Problem 2 for some advanced searches.
+	<p>But anyway, while I'm standing here, let's do an IFTTT recipe that will send me an email each time there's a <a href="https://www.justice.gov/justice-news" target="_blank">USDOJ press release</a> about Georgia.</p>
 	<p>It's the same as in this video, so you can watch later if you like.</p> 
 	<iframe width="420" height="315" src="https://www.youtube.com/embed/nOkUsPIzkIM" frameborder="0" allowfullscreen></iframe>
 
@@ -135,14 +121,33 @@
 	<p><b>georgia history site:edu</b></p>
 	= search for the words "georgia" and "history", but only in websites that end in ".edu"<br><br>
 
+	<p><b>Obama AROUND(0) Zuckerberg</b></p>
+	= search for "Obama" within 0 words of "Zuckerberg" (ie, right beside it.)<br><br>
+
+	<p><b>Obama AROUND(5) Zuckerberg</b></p>
+	= search for "Obama" within 5 words of "Zuckerberg"<br><br>
+
+	<p>Note: AROUND() has to be in all caps. And it doesn't always change the results much. But sometimes it does.</p>
+
 	<p><b>landfills site:georgia.gov filetype:xls</b></p>
 	= search for the word "landfills" in all websites that end in georiga.gov, but only show me Excel spreadsheets (.xls)
-	<p>(Sometimes the foot of the page will ask if you want to show omitted results. Yes. Show those.)</p>
+
+	<p><b>inurl:pdf "Georgia State University"</b></p>
+	= search for the phrase "Georgia State University" in any url that has "pdf" in it.<br>
+	("inurl:pdf" will give you pdfs that Google can't find via "filetype:pdf," according to <a href="http://mediashift.org/2015/05/10-expert-search-tips-for-finding-who-where-when/" target="blank">Henk van Ess</a>, to whom I apologize for cribbing some of this stuff. Read him for more fun searches.)<br><br>
 
 
 </blockquote>
+<hr>
 <img 
   src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/advancedsearch.JPG" alt="cannot display pic">
+<hr>
+ <br>
+ Other advanced searches:
+<p><a href="https://searchisback.com" target="_blank">Search is Back</a> for FB. Works better than the search in FB.</p>
+<p>Official <a href="https://www.facebook.com/livemap/" target="_blank">Facebook Live Map</a> for, well, seing all FB Live streams on now.</p>
+<p><a href="https://www.echosec.net" target="_blank">Echosec</a> for searching a bunch of social media by location.</p>
+<p>Official <a href ="https://twitter.com/search-advanced" target="_blank">Twiiter Advanced Search</a></p>
 
 </div>
 
@@ -177,16 +182,20 @@
 </h2>
 <h4>
 <blockquote>
-	<p>PDFs are kind of like a picture of words and tables. Sometimes you can search the text in a PDF. But sometimes you can't. And you certainly can't open a .pdf with Excel.</p>
+	<p>PDFs are kind of like a picture of words and tables. Sometimes you can search the text in a PDF & copy it. But sometimes you can't. And you certainly can't open a .pdf with Excel.</p>
+
+	<p>A PDF is like this: <img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/captcha.JPG">. Text is like this: <b>228</b></p>
 	
 	<p>So there are a couple of services out there that unlock the text and tables in PDFs.</p>
 	
 	<p>It's prone to error because a computer is making its best guess at what it's seeing. But IMHO, <a href="https://www.cometdocs.com" target="_blank">Cometdocs</a> gives you a pretty clean conversion.</p>
-	<p>You can convert a few docs a month with a free subscription</p>
-	<p>With a paid subscription, you can do more conversions and "OCR" the text.</p>
-	<p>(OCR: Verb. To turn pictures of words into searchable text.)</p>
+	<p>You can convert a few docs a month with a free subscription.</p>
+	<p>With a paid subscription, you can do more documents. (<a href="http://ire.org" target="_blank">IRE</a> members get a free subscription.)</p>
+	<p>Let's try it with <a href="pix/lotto.pdf" download>lotto.pdf</a>. But look at the result carefully ;)</p>
 
-	<p>Let's try it with <a href="pix/lotto.pdf" download>lotto.pdf</a>. And look at the result carefully ;)</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/MdT_ehp_Bpw" frameborder="0" allowfullscreen></iframe>
+
+
 </blockquote>
 </h4>
 
@@ -201,9 +210,10 @@
 <h2>
 <h4>
 <blockquote>
-	This is an app that stores really big files for you. If somebody's email is rejecting a file from you, you can upload it to Dropbox and just send them a link to it.<br><br>
+	<p>This is an app that stores really big files for you. If somebody's email is rejecting a file from you, you can upload it to Dropbox and just send them a link to it.</p>
 
-	If they are trying to send you a doc that your email is rejecting, you can send them a link to your Dropbox, and they can send it there without having a Dropbox account.<br><br>
+	<p>If they are trying to send you a doc that your email is rejecting, you can send them a link to your Dropbox, and they can send it there without having a Dropbox account.</p>
+
 </blockquote>
 </h4>
 </section>
@@ -242,11 +252,9 @@
 <blockquote>
 	<iframe width="500" height="200" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col0+from+1KbM21lxUZrVULagg9x_e9H-c0oqy02_ESaFJcOse+where+col4+%3D+&#39;001&#39;&amp;viz=MAP&amp;h=false&amp;lat=31.112039486145438&amp;lng=-80.4265062890625&amp;t=1&amp;z=6&amp;l=col0&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 
-	<p>There are may ways to do this.  I'm going to go with a <a href="https://en.wikipedia.org/wiki/Shapefile" target="_blank">shapefile (.shp)</a> and <a href="https://support.google.com/fusiontables/answer/2571232?hl=en" target="_blank">Google Fusion Tables</a>.</p>
+	<p>I'm going to go with a <a href="https://en.wikipedia.org/wiki/Shapefile" target="_blank">shapefile (.shp)</a> and <a href="https://support.google.com/fusiontables/answer/2571232?hl=en" target="_blank">Google Fusion Tables</a>.</p>
 	<p>Shapefiles are good to know about because pretty comprehensive <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html" target="_blank">U.S. Census maps</a> come as shapefiles.</p>
-	<p>I like Google Fusion Tables because you can do a big map and customize it in many ways.</p>
-
-	<p>Yes, there are other ways to do maps and other filetypes. But I like this one pretty well and Google Maps play well with a lot of our news websites and with Wordpress. If you have another map filetype, like .kmz or .kml, the process is similar anyway.</p>
+	<p>I like Google Fusion Tables because you can do a big map and customize it in many ways. And Google Maps play well with a lot of news websites and with Wordpress. If you have another map filetype, like .kmz or .kml, the process is similar anyway.</p>
 	
 	<p>Prerequisites: a Google account.</p>
 
@@ -307,42 +315,13 @@ Or a simple one right here:
 </h2>
 <blockquote>
 With Plotly's free tier you can make some simple graphs.<br>
-<iframe width="700" height="300" frameborder="0" scrolling="no" src="https://plot.ly/~greencracker/3.embed"></iframe><br>
+<iframe width="700" height="300" frameborder="0" scrolling="no" src="https://plot.ly/~greencracker/9.embed"></iframe><br>
 So first let's prepare some data to give Plotly.<br>
 Let's go back to <a href="pix/lotto.xls" download>lotto.xls</a><br>
 And make a Pivot Table that sums up winnings by year.<br>
 Then we'll put that info in Plotly.<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iqLLP7B44Ao" frameborder="0" allowfullscreen></iframe>
 
-<div class="fotorama"  data-allowfullscreen="true">
-	<img 
-  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly1.jpg" 
-  	data-caption="1. This looks familiar.  Make a Pivot Table that sums winnings by year.">
-  
-  	<img 
-  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly2.jpg" 
-  	data-caption="2. Then sign up for / sign into Plotly.">
-  
-  	<img 
-  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly3.jpg" 
-  	data-caption="3. To make a new chart, click the menu symbol in the top right, then 'Make a Chart' on the left.">
-
-  	<img 
-  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly4.jpg" 
-  	data-caption="4. Go back to Excel and highlight and copy the data you want in your Plotly chart. Don't grab 'Grand Total.'">
-
-  	<img 
-  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly5.jpg" 
-  	data-caption="5. Go back to Plotly. Paste the data you just grabbed out of Excel.">
-
-  	<img 
-  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly6.jpg" 
-  	data-caption="6. Tell Plotly what goes on the Y-axis and what on the X.">
-
-  	  	<img 
-  	src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/plotly7.jpg" 
-  	data-caption="7. Now, to get this online, save it. You can keep the data private, or you can make it downloadable if you want the world to be able to get your data too. Then after saving, 'share' the graph. Under share -> embed, you will get the lines of code to paste in your CMS.">
-
-</div>
 
 
 </blockquote>
@@ -353,13 +332,13 @@ Then we'll put that info in Plotly.<br>
 
 <section>
 <h2>
-	<p>But before Problem 10, let's talk about limitaions of Google, Plotly and any other outside site you use in publication ...</p>
+	<p>But before Problem 10, let's talk about limitaions of Google, Plotly, IFTTT, Changedetection and any other outside site you use in publication ...</p>
 </h2>
 <h4>
 <BLOCKQUOTE>
-	<p>When you use the free tier to make a map on Google or a graph on Plotly (or post a PDF with Scribd), that data lives on their servers, on their computers somewhere in the cloud.</p> 
-	<p>If they close the free tier one day or go out of business or whatever, they take your data with them — and your embedded thing comes up as a broken picture. If Knight decides not to support Timeline JS anymore, it's just gone. Poof, goodbye.</p>
-	<p>And you don't get a ton of control over how a graph, a map, or a timeline looks with any of these free services.</p>
+	<p>When you use free services, you're depending on them not to go out of business, for their cloud to not crash, for them to keep the free tier open.</p> 
+	<p>If any of these data disasters happen, they take your data with them — and your embedded thing will appear as a broken picture. If whoever hosts Timeline JS (Knight?) decides not to do it anymore, it's just gone. Poof, goodbye.</p>
+	<p>And as for these graphs, maps and timelines, you don't get a ton of control over how they look, compared to if you were a coder writing someting from scratch.</p>
 	<p>These are good quick & dirty tools for day-to-day storytelling.</p>
 	<p>But just as FYI, I'm telling you there are some shortcomings.</p>
 </blockquote>
@@ -381,11 +360,9 @@ Then we'll put that info in Plotly.<br>
 <br>
 <hr>
 <section>
+<p>Note: If you're dealing with seriously confidental/sensitive docs, I doubt you should put them in/through any of the services listed above.  They probably keep a copy and/or have vulnerabilities.</p>
+</section>
 
-<h4>
-Notes:
-If you're dealing with confidental/leaked documents, consult someone who knows about security before using any web services.  Don't pass a confidental document through a service that keeps a copy.  
-</h4>
 
 
 </body>
