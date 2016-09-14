@@ -246,44 +246,7 @@
 
 <section>
 <h2>
-	Problem 6: "I want to make a clickable map."<br>
-	Solution: There are many ways to do this. I like Google the best.<br><br>
-</h2>
-<h4>
-<blockquote>
-	<iframe width="500" height="200" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col0+from+1KbM21lxUZrVULagg9x_e9H-c0oqy02_ESaFJcOse+where+col4+%3D+&#39;001&#39;&amp;viz=MAP&amp;h=false&amp;lat=31.112039486145438&amp;lng=-80.4265062890625&amp;t=1&amp;z=6&amp;l=col0&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
-
-	<p>I'm going to go with a <a href="https://en.wikipedia.org/wiki/Shapefile" target="_blank">shapefile (.shp)</a> and <a href="https://support.google.com/fusiontables/answer/2571232?hl=en" target="_blank">Google Fusion Tables</a>.</p>
-	<p>Shapefiles are good to know about because pretty comprehensive <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html" target="_blank">U.S. Census maps</a> come as shapefiles.</p>
-	<p>I like Google Fusion Tables because you can do a big map and customize it in a lot of ways. And Google Maps play well with a lot of news websites and with WordPress.</p>
-	<p>Other filetypes exist, like .kml. If you have one of those, the process easier (tho customizing may be harder.) Just google a tutorial for importing .kml into Fusion Tables.</p>
-	<p>FUN FACT: Sometimes Fusion Tables do give you a wee bit of a wait when you first upload them and work with them. That's totally normal; you're not messing it up. Take a little break and try again in five minutes.</p>
-
-	<p>If, like me, you don't want all kinds of outside apps to have access to your Google/Gmail, just make a dummy account to hold maps.</p>
-
-	<p>Now, let's download a shapefile of Georgia's state House districts: <a href="pix/HOUSE15.zip" download>HOUSE15.zip</a></p>
-
-	<p>And we're going to use a website called <a href="http://www.shpescape.com" target="_blank">shpescape.com</a> to push this file into your Google account. Let's get started!</p>
-	<p>Or you can watch this video later. It shows Senate districts, but the principle is the same.</p>
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/38vR3u033gs" frameborder="0" allowfullscreen></iframe>
-	<p>Now you ask, great, how do I add more info to this map, like, say the senator's name? Or party?</p>
-	<p>It's a bit long for the scope tonight, but that is exactly what Fusion Tables were designed for!! Fuse data across multiple sources!</p>
-	<p>There are <a href="http://www.smalldatajournalism.com/projects/one-offs/mapping-with-fusion-tables/" target="_blank">tutorials online</a>, but I'll outline it real quick.</p> 
-	<p>First you'll need this spreadsheet, *** COMING SOON ****. It lists every House member, their party and their district.</p>
-	<p>Downlad that spreadsheet and save it in your own Google Drive <b>as a Fusion Table.</b></p>
-	<p>Go back to the Senate map. On the left, go under File -> Merge. Follow the steps merge the two into a new document. Match the two tables by "DISTRICT." Look closely at "DISTRICT."  It's a three-digit number with leading zeroes.  Google can match "001" to "001". But "1" and "001" might confuse it. Your merge column has to match up!</p>
-</blockquote>
-
-</h4>
-</section>
-
-
-<br>
-
-<section>
-<h2>
-	Problem 7: "I want to make a graph."<br>
+	Problem 6: "I want to make a graph."<br>
 	Solution: Try <a href="http://www.plot.ly" target="blank">Plotly</a><br><br>
 </h2>
 <blockquote>
@@ -304,6 +267,43 @@ Then we'll put that info in Plotly.<br>
 </section>
 
 <br>
+
+<section>
+<h2>
+	Problem 7: "I want to make a clickable map."<br>
+	Solution: There are many ways to do this. I like Google & shapefiles the best.<br><br>
+</h2>
+<h4>
+<blockquote>
+	<iframe width="500" height="200" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col0+from+1KbM21lxUZrVULagg9x_e9H-c0oqy02_ESaFJcOse+where+col4+%3D+&#39;001&#39;&amp;viz=MAP&amp;h=false&amp;lat=31.112039486145438&amp;lng=-80.4265062890625&amp;t=1&amp;z=6&amp;l=col0&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
+
+	<p>I'm going to go with a <a href="https://en.wikipedia.org/wiki/Shapefile" target="_blank">shapefile (.shp)</a> and <a href="https://support.google.com/fusiontables/answer/2571232?hl=en" target="_blank">Google Fusion Tables</a>.</p>
+	<p>Shapefiles are good to know about because pretty comprehensive <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html" target="_blank">U.S. Census maps</a> come as shapefiles, as do some <a href="http://www.legis.ga.gov/Joint/reapportionment/en-US/default.aspx" target="_blank">state maps</a>.</p>
+	<p>I like Google Fusion Tables because you can do a big map and customize it in a lot of ways. And Google Maps play well with a lot of news websites and with WordPress.</p>
+	<p>Other filetypes exist, like .kml. If you have one of those, the process easier (tho customizing may be harder.) Just google a tutorial for importing .kml into Fusion Tables.</p>
+	<p>CAVEAT: Sometimes Fusion Tables do give you a wee bit of a wait when you first upload them and work with them. That's totally normal; you're not messing it up. Take a little break and try again in five minutes. And sometimes this web site we're going to use, shpescape, is down. That happens. But even Google recommends you use that site. If you're on deadline, convert your .shp to a .kml online. We adapt on the job, no?</p>
+
+	<p>Now, let's download a shapefile of Georgia's U.S. House districts: <a href="pix/CONGRESS12-SHAPE-2.zip" download>CONGRESS12-SHAPE-2.zip</a></p>
+
+	<p>And we're going to use a website called <a href="http://www.shpescape.com" target="_blank">shpescape.com</a> to push this file into your Google account. Let's get started!</p>
+	<p>Or you can watch this video later. It shows Senate districts, but the principle is the same.</p>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/38vR3u033gs" frameborder="0" allowfullscreen></iframe>
+	<p>Now you ask, great, how do I add more info to this map, like, say the senator's name? Or party?</p>
+	<p>It's a bit long for the scope tonight, but that is exactly what Fusion Tables were designed for!! Fuse data across multiple sources!</p>
+	<p>There are <a href="http://www.smalldatajournalism.com/projects/one-offs/mapping-with-fusion-tables/" target="_blank">tutorials online</a>, but I'll outline it real quick.</p> 
+	<p>First you'll need this spreadsheet, *** COMING SOON ****. It lists every House member, their party and their district.</p>
+	<p>Downlad that spreadsheet and save it in your own Google Drive <b>as a Fusion Table.</b></p>
+	<p>Go back to the Senate map. On the left, go under File -> Merge. Follow the steps merge the two into a new document. Match the two tables by "DISTRICT." Look closely at "DISTRICT."  It's a three-digit number with leading zeroes.  Google can match "001" to "001". But "1" and "001" might confuse it. Your merge column has to match up!</p>
+</blockquote>
+
+</h4>
+</section>
+
+
+<br>
+
+
 
 <section>
 <h2>
