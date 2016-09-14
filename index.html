@@ -237,7 +237,7 @@
 <p>For example, if you make a Google map, you need to give your CMS a Google code.  If you make a Plotly graph, you have to give your CMS a Plotly code.</p>
 <p>Luckily, these "codes" are standardized and are pretty much a copy-and-paste into your CMS. They're called <b>"embed codes."</b></p>
 <p>AFAIK, all "embed codes" begin with "&#60iframe&#62" and are just a couple of lines.</p>
-<p>You will have to figure out in your own CMS where to paste the "embed code."  It might be really simple. Here are the buttons for CL & at my version of Wordpress, for example: <img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/cl_button.JPG" alt="cl_button"> <img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/wp_button.JPG" alt="wp_button"></p>
+<p>You will have to figure out in your own CMS where to paste the "embed code."  It might be really simple. Here are the buttons for CL & at my version of WordPress, for example: <img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/cl_button.JPG" alt="cl_button"> <img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/wp_button.JPG" alt="wp_button"></p>
 <p>(In WordPress, you *might* need a plugin.  There are many.  I use <a href ="https://wordpress.org/support/plugin/iframe" target="_blank">iframe by Webvitalii</a>.)</p>
 <p>Your CMS might require a few more steps tho. If you need help, ask help desk where to paste "embed codes."</p>
 <p>Anyway, if you make anything online like a Google map, a graph, a timeline or whatever else they've dreamed up, your goal is to get an "embed code" and put it somewhere in your CMS.</p>
@@ -256,7 +256,7 @@
 	<p>I'm going to go with a <a href="https://en.wikipedia.org/wiki/Shapefile" target="_blank">shapefile (.shp)</a> and <a href="https://support.google.com/fusiontables/answer/2571232?hl=en" target="_blank">Google Fusion Tables</a>.</p>
 	<p>Shapefiles are good to know about because pretty comprehensive <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html" target="_blank">U.S. Census maps</a> come as shapefiles.</p>
 	<p>I like Google Fusion Tables because you can do a big map and customize it in a lot of ways. And Google Maps play well with a lot of news websites and with WordPress.</p>
-	<p>Other may filetypes exist, like .kml and .kmz.  If you have one of those, the process is even easier.  Just google a tutorial for importing .kml into Fusion Tables.</p>
+	<p>Other may filetypes exist, like .kml and .kmz. If you have one of those, the process is even easier. Just google a tutorial for importing .kml into Fusion Tables.</p>
 	<p>FUN FACT: Sometimes Fusion Tables do give you a wee bit of a wait when you first upload them and work with them. That's totally normal; you're not messing it up. Take a little break and try again in five minutes.</p>
 	<p>Prerequisites: a Google account.</p>
 
@@ -313,8 +313,8 @@ Then we'll put that info in Plotly.<br>
 <h4>
 <BLOCKQUOTE>
 	<p>When you use free services, you're depending on them not to go out of business, for their cloud to not crash, for them to keep the free tier open.</p> 
-	<p>If any of these data disasters happen, they take your data with them — and your embedded thing will appear as a broken picture. If whoever hosts Timeline JS (Knight?) decides not to do it anymore, it's just gone. Poof, goodbye.</p>
-	<p>And as for these graphs, maps and timelines, you don't get a ton of control over how they look, compared to if you were a coder writing someting from scratch.</p>
+	<p>If any of these data disasters happen, they take your data with them — and your embedded thing will appear as a broken picture.</p>
+	<p>And as for these graphs & maps, you don't get a ton of control over how they look, compared to if you were a coder writing someting from scratch.</p>
 	<p>These are good quick & dirty tools for day-to-day storytelling.</p>
 	<p>But just as FYI, I'm telling you there are some shortcomings.</p>
 </blockquote>
@@ -334,15 +334,43 @@ Then we'll put that info in Plotly.<br>
 </section>
 
 <br>
+
 <hr>
 <section>
 <p>Note: If you're dealing with seriously confidental/sensitive docs, I doubt you should put them in/through any of the services listed above.  They probably keep a copy and/or have vulnerabilities.</p>
 </section>
+<hr>
+
 <br>
+<section>
+<h2>
+	Bonus Round:<br>
+	Some other tools, not all of which I've tried.<br><br>
+</h2>
+<h4>
+<BLOCKQUOTE>
+	<p>Two ways to search for deleted web pages or old versions of web pages: <a href="https://archive.org/web/" target="_blank">The Wayback Machine aka Archive.org</a> or, google something and click the GREEN down arrow beside the results. Sometimes one of the choices is "cached."</p>
+	<p><a href="http://www.splitpdf.com" target="_blank">PDFSplit</a> to pull one or more pages out of a PDF.</p>
+	<p><a href="https://free.law/recap/" target="_blank">RECAP for Pacer</a>, a plugin for Chrome and Firefox that downloads and stores the federal court docs you view in <a href="https://www.pacer.gov" target="_blank">Pacer</a> and allows other users to see those documents for free. And you can, for free, see what other users have downloaded. Saves $ on your Pacer bill.</p>
+	<p><a href="http://sqoop.com" target="_blank">Sqoop</a> tracks SEC filings, patent applications and Pacer filings, and I think it lets you search & filter and does email alerts. But I also *think* it's missing the <a href="https://www.pacer.gov/psco/cgi-bin/links.pl" target="_blank">federal courts</a> that don't publish an RSS feed, cough, cough Northern Georgia. I've never messed with patents & SEC parts.</p>
+	<p><a href="https://dockets.justia.com" target="_blank">Justia Dockets & Filings</a> does catch all federal courts, AFAIK.</p>
+	<p><a href="https://www.silk.co" target="_blank">Silk</a>: "Silk lets anyone create interactive data visualizations, publish websites and tell interactive stories."</p>
+	<p><a href="https://addons.mozilla.org/en-US/firefox/addon/sitedelta/" target="_blank">SiteDelta</a>, a Firefox plugin that checks pages for changes.</p>
+	<p><a href="https://www.bloom.li" target="_blank">Bloom</a>, a "geolocation platform for news publishers."</p>
+
+</blockquote>
+</h4>
+</section>
+
+<hr>
+<section>
+<p>Additional bonus rounds. Items that were cut b/c the presentation was getting too long:</p>
+</section>
+<hr>
 
 <section>
 <h2>
-	<p>An additional problem: "I need to download a bunch of documents/pictures from a website. A bunch."</p>
+	<p>Problem: "I need to download a bunch of documents/pictures from a website. A bunch."</p>
 	<p>Solution: Requires Firefox, but try the DownThemAll plugin</p>
 </h2>
 <h4>
@@ -362,7 +390,7 @@ Then we'll put that info in Plotly.<br>
 
 <section>
 <h2>
-	Another additional problem: "I want to make a timeline."<br>
+	Problem: "I want to make a timeline."<br>
 	Solution: Use Timeline JS<br>
 </h2>
 <h4>
@@ -383,28 +411,6 @@ Or a simple one right here:
 </section>
 
 <br>
-
-
-
-<section>
-<h2>
-	Bonus Round:<br>
-	Some other tools, not all of which I've tried.<br><br>
-</h2>
-<h4>
-<BLOCKQUOTE>
-	<p>Two ways to search for deleted web pages or old versions of web pages: <a href="https://archive.org/web/" target="_blank">The Wayback Machine aka Archive.org</a> or, google something and click the GREEN down arrow beside the results. Sometimes one of the choices is "cached."</p>
-	<p><a href="http://www.splitpdf.com" target="_blank">PDFSplit</a> to pull one or more pages out of a PDF.</p>
-	<p><a href="https://free.law/recap/" target="_blank">RECAP for Pacer</a>, a plugin for Chrome and Firefox that downloads and stores the federal court docs you view in <a href="https://www.pacer.gov" target="_blank">Pacer</a> and allows other users to see those documents for free. And you can, for free, see what other users have downloaded. Saves $ on your Pacer bill.</p>
-	<p><a href="http://sqoop.com" target="_blank">Sqoop</a> tracks SEC filings, patent applications and Pacer filings, and I think it lets you search & filter and does email alerts. But I also *think* it's missing the <a href="https://www.pacer.gov/psco/cgi-bin/links.pl" target="_blank">federal courts</a> that don't publish an RSS feed, cough, cough Northern Georgia. I've never messed with patents & SEC parts.</p>
-	<p><a href="https://dockets.justia.com" target="_blank">Justia Dockets & Filings</a> does catch all federal courts, AFAIK.</p>
-	<p><a href="https://www.silk.co" target="_blank">Silk</a>: "Silk lets anyone create interactive data visualizations, publish websites and tell interactive stories."</p>
-	<p><a href="https://addons.mozilla.org/en-US/firefox/addon/sitedelta/" target="_blank">SiteDelta</a>, a Firefox plugin that checks pages for changes.</p>
-	<p><a href="https://www.bloom.li" target="_blank">Bloom</a>, a "geolocation platform for news publishers."</p>
-
-</blockquote>
-</h4>
-</section>
 
 
 </body>
