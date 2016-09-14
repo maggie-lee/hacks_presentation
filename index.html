@@ -170,26 +170,7 @@
 
 <section>
 <h2>
-	Problem 3: "I've got a data table, but I'm counting up things by hand. How can I summarize data in Excel?"<br>
-	Solution: Folks, the Excel Pivot Table.<br><br>
-</h2>
-<h4>
-<blockquote>
-	<p>Let's start with <a href="pix/lotto.xls" download>lotto.xls</a>, a (fake) list of where lottery winners live and how much they won.</p>
-	<p>I'll do an example right here.</p>
-	<p>It's the same as in this video, so you can watch later if you like.</p>  
-</blockquote>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0DcDjTc0b9Q" frameborder="0" allowfullscreen></iframe>
-
-</h4>
-</section>
-
-<br>
-
-<section>
-<h2>
-	Problem 4: "This document is a stupid PDF. It contains tables I want to open in Excel."<br>
+	Problem 3: "This document is a stupid PDF. It contains tables I want to open in Excel."<br>
 	Solution: <a href="https://www.cometdocs.com" target="_blank">Cometdocs</a>.<br><br>
 </h2>
 <h4>
@@ -211,6 +192,25 @@
 </blockquote>
 </h4>
 
+</section>
+
+<br>
+
+<section>
+<h2>
+	Problem 4: "OK great, I got that data in an Excel spreadsheet. How can I summarize & subtotal it?"<br>
+	Solution: Folks, the Excel Pivot Table.<br><br>
+</h2>
+<h4>
+<blockquote>
+	<p>Let's start with <a href="pix/lotto.xls" download>lotto.xls</a>, a (fake) list of where lottery winners live and how much they won.</p>
+	<p>I'll do an example right here.</p>
+	<p>It's the same as in this video, so you can watch later if you like.</p>  
+</blockquote>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0DcDjTc0b9Q" frameborder="0" allowfullscreen></iframe>
+
+</h4>
 </section>
 
 <br>
@@ -271,21 +271,20 @@ Then we'll put that info in Plotly.<br>
 <section>
 <h2>
 	Problem 7: "I want to make a clickable map."<br>
-	Solution: There are many ways to do this. I like Google & shapefiles the best.<br><br>
+	Solution: Google Fusion Table maps.<br><br>
 </h2>
 <h4>
 <blockquote>
 	<iframe width="500" height="200" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col0+from+1KbM21lxUZrVULagg9x_e9H-c0oqy02_ESaFJcOse+where+col4+%3D+&#39;001&#39;&amp;viz=MAP&amp;h=false&amp;lat=31.112039486145438&amp;lng=-80.4265062890625&amp;t=1&amp;z=6&amp;l=col0&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
-
-	<p>I'm going to go with a <a href="https://en.wikipedia.org/wiki/Shapefile" target="_blank">shapefile (.shp)</a> and <a href="https://support.google.com/fusiontables/answer/2571232?hl=en" target="_blank">Google Fusion Tables</a>.</p>
-	<p>Shapefiles are good to know about because pretty comprehensive <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html" target="_blank">U.S. Census maps</a> come as shapefiles, as do some <a href="http://www.legis.ga.gov/Joint/reapportionment/en-US/default.aspx" target="_blank">state maps</a>.</p>
-	<p>I like Google Fusion Tables because you can do a big map and customize it in a lot of ways. And Google Maps play well with a lot of news websites and with WordPress.</p>
-	<p>Other filetypes exist, like .kml. If you have one of those, the process easier (tho customizing may be harder.) Just google a tutorial for importing .kml into Fusion Tables.</p>
-	<p>CAVEAT: Sometimes Fusion Tables do give you a wee bit of a wait when you first upload them and work with them. That's totally normal; you're not messing it up. Take a little break and try again in five minutes. And sometimes this web site we're going to use, shpescape, is down. That happens. But even Google recommends you use that site. If you're on deadline, <a href="http://www.mapsdata.co.uk/online-file-converter/" target="blank">convert your .shp to a .kml online</a>. We adapt on the job, no?</p>
-
-	<p>Now, let's download a shapefile of Georgia's U.S. House districts: <a href="pix/CONGRESS12-SHAPE-2.zip" download>CONGRESS12-SHAPE-2.zip</a></p>
-
-	<p>And we're going to use a website called <a href="http://www.shpescape.com" target="_blank">shpescape.com</a> to import this complex filetype into your Google account. Let's get started!</p>
+	
+	<p>Let's say you want to make a clickable map of Georgia's congressional districts.</p>
+	<p>First you'll need to download a file of that map. Then you'll have to tell Google Fusion Tables to open that map.</p>
+	<p>Two really common map formats are <a href="https://en.wikipedia.org/wiki/Shapefile" target="_blank">shapefile (.shp)</a> and <a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language" target="_blank"</a>.kml</p>.
+	<p>Shapefiles are big, but you should know about them because sometimes you'll run into them, like on the <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html" target="_blank">U.S. Census website</a>.</p>
+	<p>Kmls are smaller and they are the format that Google Fusion Tables wants.</p>
+	<p>So let's imagine our source has given us this shapefile of Georgia's congressional districts: <a href="pix/CONGRESS12-SHAPE-2.zip" download>CONGRESS12-SHAPE-2.zip</a>. If your source gives you a .kml, well, then you can skip the first steps.</p>
+	<p>The first step is to turn this .shp into a .kml. I'm going to use a site called <a href="http://www.mapsdata.co.uk/online-file-converter/" target="_blank">mapsdata</a>. There are others you can also use.</p>
+	<p>Let's get started!</p>
 	<p>Or you can watch this video later. It shows state Senate districts, but the principle is the same.</p>
 
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/38vR3u033gs" frameborder="0" allowfullscreen></iframe>
