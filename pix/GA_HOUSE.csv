@@ -1,15 +1,15 @@
-NAME,PARTY,DISTRICT
-Rick W. Allen ,(R) ,012
-Sanford Bishop ,(D) ,002
-Buddy Carter ,(R) ,001
-Doug Collins ,(R) ,009
-Tom Graves ,(R) ,014
-Jody Hice ,(R) ,010
-Hank Johnson ,(D) ,004
-John Lewis ,(D) ,005
-Barry Loudermilk ,(R) ,011
-Tom Price ,(R) ,006
-Austin Scott ,(R) ,008
-David Scott ,(D) ,013
-Lynn Westmoreland ,(R) ,003
-Rob Woodall ,(R) ,007
+NAME,PARTY,DISTRICT,COLOR_CODE
+Rick W. Allen ,(R) ,012,#ff0000
+Sanford Bishop ,(D) ,002,#0000ff
+Buddy Carter ,(R) ,001,#ff0000 
+Doug Collins ,(R) ,009,#ff0000
+Tom Graves ,(R) ,014,#ff0000 
+Jody Hice ,(R) ,010,#ff0000 
+Hank Johnson ,(D) ,004,#0000ff
+John Lewis ,(D) ,005,#0000ff
+Barry Loudermilk ,(R) ,011,#ff0000 
+Tom Price ,(R) ,006,#ff0000
+Austin Scott ,(R) ,008,#ff0000
+David Scott ,(D) ,013,#0000ff
+Lynn Westmoreland ,(R) ,003,#ff0000
+Rob Woodall ,(R) ,007,#ff0000 
