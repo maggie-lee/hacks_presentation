@@ -162,7 +162,7 @@
 <p><a href="https://www.echosec.net" target="_blank">Echosec</a> for searching a bunch of social media by location.</p>
 <p>Official <a href ="https://twitter.com/search-advanced" target="_blank">Twitter Advanced Search</a></p>
 
-</div>
+<!-- </div> -->
 
 </h4>
 </section>
@@ -217,10 +217,10 @@
 <br>
 
 <section>
-	<h2>
+<h2>
 	Problem 5: "This government agency says my open record request is too big to email."<br>
 	Solution: Will they put it in a <a href="https://www.dropbox.com" target="_blank">Dropbox</a>?<br><br>
-<h2>
+</h2>
 <h4>
 <blockquote>
 	<p>This is an app that transfers really big files for you, files that are too big to email.</p>
@@ -232,16 +232,16 @@
 <br>
 
 <section>
-<p>Next we're going to talk about how to put things like maps and graphs on your web site.</p>
+<p>Next up: putting things like maps and graphs on your web site.</p>
 <p>You probably most all work with a CMS (a "content management system") or WordPress. This is the place where you paste in the text you want to publish.</p>
-<p>When you want to publish someting besides words, you have to tell your CMS/WordPress where that map or graph is stored.</p>
+<p>But when you want to publish a map or graph, you have to tell your CMS/WordPress where that map or graph is stored.</p>
 <p>For example, if you make a Google map, you need to give your CMS a Google code.  If you make a Plotly graph, you have to give your CMS a Plotly code.</p>
 <p>Luckily, these "codes" are standardized and are pretty much a copy-and-paste into your CMS. They're called <b>"embed codes."</b></p>
 <p>AFAIK, all "embed codes" begin with "&#60iframe&#62" and are just a couple of lines.</p>
 <p>You will have to figure out in your own CMS where to paste the "embed code."  It might be really simple. Here are the buttons for CL & at my version of WordPress, for example: <img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/cl_button.JPG" alt="cl_button"> <img src="https://raw.githubusercontent.com/greencracker/hacks_presentation/gh-pages/pix/wp_button.JPG" alt="wp_button"></p>
 <p>(In WordPress, you *might* need a plugin.  There are many.  I use <a href ="https://wordpress.org/support/plugin/iframe" target="_blank">iframe by Webvitalii</a>.)</p>
 <p>Your CMS might require a few more steps tho. If you need help, ask help desk where to paste "embed codes."</p>
-<p>Anyway, if you make anything online like a Google map, a graph, a timeline or whatever else they've dreamed up, your goal is to get an "embed code" and put it somewhere in your CMS.</p>
+<p>Anyway, if you make anything online like a Google map, a graph, a timeline or whatever else they've dreamed up, your goal is to get an "<b>embed code</b>" and put it somewhere in your CMS.</p>
 
 </section>
 
@@ -250,6 +250,7 @@
 	Problem 6: "I want to make a graph."<br>
 	Solution: Try <a href="http://www.plot.ly" target="blank">Plotly</a><br><br>
 </h2>
+<h4>
 <blockquote>
 <p>With Plotly's free tier you can make some simple graphs.</p>
 <iframe width="700" height="300" frameborder="0" scrolling="no" src="https://plot.ly/~greencracker/9.embed"></iframe><br>
@@ -278,12 +279,12 @@ Then we'll put that info in Plotly.<br>
 <blockquote>
 	<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col33+from+12YvwF70XQpYbeBXVr3_o80kuTLcUEynYTBRCCmtH+where+col4+%3E%3D+14&amp;viz=MAP&amp;h=false&amp;lat=34.38145543733408&amp;lng=-84.62348838437498&amp;t=1&amp;z=7&amp;l=col33&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 	<p>Let's say you want to make a clickable map of Georgia's congressional districts.</p>
-	<p>First you'll need to download a file of that map. Then you'll have to tell Google Fusion Tables to open that map.</p>
-	<p>Two really common map formats are <a href="https://en.wikipedia.org/wiki/Shapefile" target="_blank">shapefile (.shp)</a> and <a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language" target="_blank">.kml</a>.</p>
-	<p>Shapefiles are big, but you should know about them because sometimes you'll run into them, like on the <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html" target="_blank">U.S. Census website</a>; sometimes they are what the <a href="http://www.legis.ga.gov/Joint/reapportionment/en-US/default.aspx" target="_blank">Georgia General Assembly</a> publishes.</p>
+	<p>First you'll need to download a file of that map.</p>
+	<p>Two common map filetypes are <a href="https://en.wikipedia.org/wiki/Shapefile" target="_blank">shapefile (.shp)</a> and <a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language" target="_blank">.kml</a>.</p>
+	<p>Shapefiles are big, but you need to know about them because a lot of public agencies use them, like the <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html" target="_blank">U.S. Census</a>, or sometimes the <a href="http://www.legis.ga.gov/Joint/reapportionment/en-US/default.aspx" target="_blank">Georgia General Assembly</a></p>
 	<p>Kmls are smaller and they are the format that Google Fusion Tables wants.</p>
-	<p>So let's imagine our source has given us this shapefile of Georgia's congressional districts: <a href="pix/CONGRESS12-SHAPE-2.zip" download>CONGRESS12-SHAPE-2.zip</a>. (If your source gives you a .kml, then you can skip the first step.)</p>
-	<p>The first step is to turn this .shp into a .kml. I'm going to use a site called <a href="http://www.mapsdata.co.uk/online-file-converter/" target="_blank">mapsdata</a>. There are others you can also use.</p>
+	<p>So let's imagine our source has given us this shapefile of Georgia's congressional districts: <a href="pix/CONGRESS12-SHAPE-2.zip" download>CONGRESS12-SHAPE-2.zip</a>. (If your source gives you a .kml, then you can skip the conversion step.)</p>
+	<p>Now we will turn this .shp into a .kml. I'm going to use a site called <a href="http://www.mapsdata.co.uk/online-file-converter/" target="_blank">mapsdata</a>. There are others, like <a href="http://www.shpescape.com" target="_blank">shpescape.com</a>.</p>
 	<p>Let's get started!</p>
 	<p>Or you can watch this video later.</p>
 
@@ -309,7 +310,7 @@ Then we'll put that info in Plotly.<br>
 	<p>But before Problem 8, let's talk about limitaions of Google, Plotly, IFTTT, Changedetection and any other outside site you use in publication ...</p>
 </h2>
 <h4>
-<BLOCKQUOTE>
+<blockquote>
 	<p>When you use free services, you're depending on them not to go out of business, for their cloud to not crash, for them to keep the free tier open.</p> 
 	<p>If any of these data disasters happen, they take your data with them — and your embedded thing will appear as a broken picture.</p>
 	<p>And as for these graphs & maps, you don't get a ton of control over how they look compared to if you were a coder writing someting from scratch.</p>
@@ -325,8 +326,8 @@ Then we'll put that info in Plotly.<br>
 	Solution: Join NICAR-L<br><br>
 </h2>
 <h4>
-<BLOCKQUOTE>
-	That's the <a href="https://www.ire.org/resource-center/listservs/" target="_blank">National Institute for Computer-Assisted Reporting email listserv</a>. While you're there, join any of the several Investigative Reporters & Editors listservs.  They are super-helpful and super-friendly.</a><br><br>
+<blockquote>
+	That's the <a href="https://www.ire.org/resource-center/listservs/" target="_blank">National Institute for Computer-Assisted Reporting email listserv</a>. While you're there, join any of the several Investigative Reporters & Editors listservs.  They are super-helpful and super-friendly.<br><br>
 </blockquote>
 </h4>
 </section>
@@ -346,12 +347,14 @@ Then we'll put that info in Plotly.<br>
 	Some other tools, not all of which I've tried.<br><br>
 </h2>
 <h4>
-<BLOCKQUOTE>
+<blockquote>
 	<p>Two ways to search for deleted web pages or old versions of web pages: <a href="https://archive.org/web/" target="_blank">The Wayback Machine aka Archive.org</a> or, google something and click the GREEN down arrow beside the results. Sometimes one of the choices is "cached."</p>
 	<p><a href="http://www.splitpdf.com" target="_blank">PDFSplit</a> to pull one or more pages out of a PDF.</p>
 	<p><a href="https://free.law/recap/" target="_blank">RECAP for Pacer</a>, a plugin for Chrome and Firefox that downloads and stores the federal court docs you view in <a href="https://www.pacer.gov" target="_blank">Pacer</a> and allows other users to see those documents for free. And you can, for free, see what other users have downloaded. Saves $ on your Pacer bill.</p>
 	<p><a href="http://sqoop.com" target="_blank">Sqoop</a> tracks SEC filings, patent applications and Pacer filings, and I think it lets you search & filter and does email alerts. But I also *think* it's missing the <a href="https://www.pacer.gov/psco/cgi-bin/links.pl" target="_blank">federal courts</a> that don't publish an RSS feed, cough, cough Northern Georgia. I've never messed with patents & SEC parts.</p>
 	<p><a href="https://dockets.justia.com" target="_blank">Justia Dockets & Filings</a> does catch all federal courts, AFAIK.</p>
+	<p><a href="https://www.import.io" target="_blank">Import.io</a> can scrape data off *some* websites into tables you can open in Excel.</p>
+	<p><a href="https://storymap.knightlab.com" target="_blank">StoryMapJS</a>, a Knight Lab offering, is like a mashup of a map and a timeline.</p>
 	<p><a href="https://www.silk.co" target="_blank">Silk</a>: "Silk lets anyone create interactive data visualizations, publish websites and tell interactive stories."</p>
 	<p><a href="https://addons.mozilla.org/en-US/firefox/addon/sitedelta/" target="_blank">SiteDelta</a>, a Firefox plugin that checks pages for changes.</p>
 	<p><a href="https://www.bloom.li" target="_blank">Bloom</a>, a "geolocation platform for news publishers."</p>
